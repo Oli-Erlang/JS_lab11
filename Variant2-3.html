@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script>
+			$(document).ready(function() {
+				$("button").click(function () {
+					$("#block2").slideUp({
+					 up:'80px',
+					}, "slow");
+					
+					$("#block4").slideUp({
+					 up:'80px',
+					}, "slow");
+					
+					$("#block6").slideUp({
+					 up:'80px',
+					}, "slow");
+			});
+			});
+		</script>
+	</head>
+	<body>
+		<button>Нажми меня!</button>
+		<br><br>
+		<div  style="width:80px; height:80px; background-color:black; position: relative;"></div>
+		<div id="block2" style="width:80px; height:80px; background-color:orange; position: relative;"></div>
+		<div  style="width:80px; height:80px; background-color:grey; position: relative;"></div>
+		<div id="block4" style="width:80px; height:80px; background-color:pink; position: relative;"></div>
+		<div style="width:80px; height:80px; background-color:red; position: relative;"></div>
+		<div id="block6" style="width:80px; height:80px; background-color:blue; position: relative;"></div>
+	</body>
+</html>
